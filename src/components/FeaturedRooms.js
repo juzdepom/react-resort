@@ -13,10 +13,11 @@ class FeaturedRooms extends PureComponent {
     static contextType = RoomContext
 
     render() {
-        const value = this.context;
-        console.log(value);
+        const { featuredRooms : rooms } = this.context
+        console.log('featured rooms component')
+        console.log(rooms)
         return (
-            <div>Hello from featured rooms {value}</div>
+            <div>Hello from featured rooms </div>
         )
     }
 }
