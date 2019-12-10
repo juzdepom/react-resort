@@ -24,7 +24,7 @@ See [Page Not Found on Netlify with React Router](https://sung.codes/blog/2018/1
 
 <strong>React Icons Documentation:</strong>https://react-icons.netlify.com/#/
 
-
+<strong>React Context API Documentation: </strong>https://reactjs.org/docs/context.html#reactcreatecontext
 
 
 
