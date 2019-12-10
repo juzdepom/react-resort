@@ -10,21 +10,31 @@ Tip: Command + Shift + V to see README preview.
 
 <hr/>
 
-## Work Log
 
-### Session 1 - Tu, Dec 10, 2019
 
-#### Resources
+## Dependencies 
 
-* <strong>"React Router Dom" does not play very well with "Netlify" out of the box</strong>, which means we will need a <em>redirect file</em>.
-  * The redirect file is located in the "set up" folder that Coding Addict provides; it's called "_redirects" and will be placed in the public folder.
+* ```npm install react-router-dom```
+* ```npm install react-icons```
+    * <strong>React Icons Documentation:</strong>https://react-icons.netlify.com/#/ 
+* ```npm install styled-components```
+    * <strong>Styled Components Documentation: </strong>https://www.styled-components.com/docs
+
+
+## Other Resources
+
+* <strong>"React Router Dom" does not play very well with "Netlify" out of the box</strong>, which means  a <em>redirect file</em> is needed.
+  * The redirect file is located in the "set up" folder that Coding Addict provides. It's called "_redirects" and will be placed in the public folder.
   * See [Page Not Found on Netlify with React Router](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/) for a more in-depth explanation.
-
-* <strong>React Icons Documentation:</strong>https://react-icons.netlify.com/#/
 
 * <strong>React Context API Documentation: </strong>https://reactjs.org/docs/context.html#reactcreatecontext
 
-* <strong>Styled Components Documentation: </strong>https://www.styled-components.com/docs
+* <strong>Enable Emmet for React.js JSX in VSCode: </strong> https://www.youtube.com/watch?v=8dkGmPprlWM
+
+
+## Work Log
+
+### Session 1 - Tu, Dec 10, 2019
 
 #### Commits
 
