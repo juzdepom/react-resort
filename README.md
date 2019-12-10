@@ -1,12 +1,27 @@
 
 ## React Resorts Project
 
-Following the ~6 hour [In-Depth React Tutorial: Build a Hotel Reservation Site (with Contentful and Netlify)
+### See Website [Here](https://react-resort-tutorial.netlify.com/)
+
+<img src="./screenshots/demo.gif" width="500">
+
+Note: currently website is coded to show the data that is locally stored in the data.js file, however, can go into the context.js file to to switch over to pulling data from Contentful.
+
+Based off of the ~6 hour [In-Depth React Tutorial: Build a Hotel Reservation Site (with Contentful and Netlify)
 ](https://www.youtube.com/watch?v=LXJOvkVYQqA) on FreeCodeCamp by Coding Addict.
+
+Account on Contentful that is linked to this Github account.
+
 
 Set Up Files: [https://github.com/john-smilga/setup-files-react-beach-resort](https://github.com/john-smilga/setup-files-react-beach-resort)
 
-Tip: Command + Shift + V to see README preview.
+Important! When deploying to Netlify don't forget to manually write in the environment variables (see image below)
+
+<img src="./screenshots/netlify-environment-variables.png" width="500">
+
+VSCode Tip: Command + Shift + V to see README preview.
+
+
 
 <hr/>
 
@@ -31,15 +46,17 @@ Tip: Command + Shift + V to see README preview.
 
 * <strong>React Context API Documentation: </strong>https://reactjs.org/docs/context.html#reactcreatecontext
 
-* <strong>Enable Emmet for React.js JSX in VSCode: </strong> https://www.youtube.com/watch?v=8dkGmPprlWM
+* <strong>(Very useful!) Enable Emmet for React.js JSX in VSCode: </strong> https://www.youtube.com/watch?v=8dkGmPprlWM
 
 
 ## Work Log
 
-### Session 1 - Tu, Dec 10, 2019
+#### Tu, Dec 10, 2019 - Total Time Spent Coding Out Project: 9h45
+
 
 #### Commits
 
+* created the .env.development file, added to .gitignore and made Contentful.js available for upload
 * linked up with Contentful, created Contentful.js file but gitignored it. An example can be found at ContentfulExample.js
 * npm installed contentful
 * set up size, breakfast, and pets filter in RoomsFilter
