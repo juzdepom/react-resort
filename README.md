@@ -16,6 +16,16 @@ Tip: Command + Shift + V to see README preview.
 
 7:15 AM - ?
 
+<strong>React Router Dom does not play very well with Netlify out of the box</strong>, which means we will need a <em>redirect file</em>.
+
+The redirect file is located in the "set up" folder that Coding Addict provides; it's called "_redirects" and will be placed in the public folder.
+
+See [Page Not Found on Netlify with React Router](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/) for a more in-depth explanation.
+
+
+
+
+
 
 <hr/>
 
