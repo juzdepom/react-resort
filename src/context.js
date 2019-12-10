@@ -71,7 +71,7 @@ class RoomProvider extends PureComponent {
 
     handleChange = event => {
         const target = event.target
-        const value = event.type === 'checkbox' ? target.checked : target.value
+        const value = target.type === 'checkbox' ? target.checked : target.value
         const name = target.name
         this.setState({
             [name]:value
@@ -94,6 +94,20 @@ class RoomProvider extends PureComponent {
         }
         //filter by price
         sortedRooms = sortedRooms.filter(room => room.price <= price )
+
+        //filter by size
+        sortedRooms = sortedRooms.filter(room => room.size >= minSize && room.size <= maxSize )
+
+        //filter by breakfast
+        if(breakfast){
+            sortedRooms = sortedRooms.filter(room => room.breakfast === true )
+        }
+
+        //filter by pets
+        if(pets){
+            sortedRooms = sortedRooms.filter(room => room.pets === true)
+
+        }
 
         this.setState({
             sortedRooms,
