@@ -6,7 +6,7 @@
 .pnp.js
 
 # contentful
-/src/Contentful.js
+# /src/Contentful.js
 
 # testing
 /coverage
@@ -16,6 +16,7 @@
 
 # misc
 .DS_Store
+.env.development
 .env.local
 .env.development.local
 .env.test.local
