@@ -27,8 +27,13 @@ class SingleRoom extends PureComponent {
                 <Link to="/rooms" className="btn-primary">Back To Rooms</Link>
             </div>
         }
+        const {name, description, capacity, size, price, extras, breakfast, pets, images } = room
         return (
-            <div>Hello from single room page</div>
+            <Hero hero="roomsHero">
+                <Banner title={`${name} room`}>
+                    <Link to="/rooms" className="btn-primary">Back To Rooms</Link>
+                </Banner>
+            </Hero>
         )
     }
 }
