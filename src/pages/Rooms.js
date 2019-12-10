@@ -1,8 +1,9 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 function Rooms() {
     return (
-        <div>rooms page </div>
+        <Hero hero="roomsHero"></Hero>
     )
 }
 
