@@ -14,20 +14,35 @@ Tip: Command + Shift + V to see README preview.
 
 ### Session 1 - Tu, Dec 10, 2019
 
-7:15 AM - ?
+#### Resources
 
-<strong>React Router Dom does not play very well with Netlify out of the box</strong>, which means we will need a <em>redirect file</em>.
+* <strong>"React Router Dom" does not play very well with "Netlify" out of the box</strong>, which means we will need a <em>redirect file</em>.
+  * The redirect file is located in the "set up" folder that Coding Addict provides; it's called "_redirects" and will be placed in the public folder.
+  * See [Page Not Found on Netlify with React Router](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/) for a more in-depth explanation.
 
-The redirect file is located in the "set up" folder that Coding Addict provides; it's called "_redirects" and will be placed in the public folder.
+* <strong>React Icons Documentation:</strong>https://react-icons.netlify.com/#/
 
-See [Page Not Found on Netlify with React Router](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/) for a more in-depth explanation.
+* <strong>React Context API Documentation: </strong>https://reactjs.org/docs/context.html#reactcreatecontext
 
-<strong>React Icons Documentation:</strong>https://react-icons.netlify.com/#/
+* <strong>Styled Components Documentation: </strong>https://www.styled-components.com/docs
 
-<strong>React Context API Documentation: </strong>https://reactjs.org/docs/context.html#reactcreatecontext
+#### Commits
 
-
-
+* [npm installed styled-components and created the StyledHero component for the SingleRoom component](https://github.com/juzdepom/react-resort/commit/cea85b3759898351efab63ab62c32bd9ca44234b)
+* [set up Hero and Banner components in the SingleRoom component](https://github.com/juzdepom/react-resort/commit/3c30bf6b5e0be96195f53233d82726a75de66691)
+* set up context api with SingleRoom component and accessed method with the slug as a parameter
+* set up Loading and Room component and incorporated into FeaturedRooms component
+* customized context api for FeaturedRooms component
+* set up the context api with the FeaturedRooms component
+* set up Services and Title component
+* set up Banner component
+* set up the Hero component
+* stylized navbar component
+* created and installed navbar
+* set up react-router-dom foundation
+* added the setup files and created the home, rooms, singleroom and error page
+* installed react-icons, react-router-dom and updated README
+* Initial commit from Create React App
 
 <hr/>
 
