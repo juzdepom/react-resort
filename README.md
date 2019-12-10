@@ -1,7 +1,7 @@
 
 ## React Resorts Project
 
-### See Website [Here](https://react-resort-tutorial.netlify.com/)
+### See Website: https://react-resort-tutorial.netlify.com/
 
 <img src="./screenshots/demo.gif" width="500">
 
