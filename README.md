@@ -38,6 +38,7 @@ Tip: Command + Shift + V to see README preview.
 
 #### Commits
 
+* set up price filter in RoomsFilter
 * set up guest number filter in RoomsFilter
 * set up room type filter in the RoomFilter component
 * built out the RoomsList component

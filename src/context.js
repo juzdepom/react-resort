@@ -82,17 +82,19 @@ class RoomProvider extends PureComponent {
         let { rooms, type, capacity, price, minSize, maxSize, breakfast, pets } = this.state
         // get all the rooms
         let sortedRooms = [...rooms]
-        // transform value to Int
-        capacity = parseInt(capacity)
-
+        
         //filter by type
         if(type!=='all'){
             sortedRooms = sortedRooms.filter(room => room.type === type)
         }
-        //filter by capacity
+        // filter by capacity
+        capacity = parseInt(capacity)
         if(capacity!==1){
             sortedRooms = sortedRooms.filter(room => room.capacity >= capacity)
         }
+        //filter by price
+        sortedRooms = sortedRooms.filter(room => room.price <= price )
+
         this.setState({
             sortedRooms,
         })
