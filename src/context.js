@@ -17,6 +17,15 @@ class RoomProvider extends PureComponent {
             sortedRooms: [],
             featuredRooms: [],
             loading: true,
+            type: "all",
+            capacity: 1,
+            price: 0,
+            minPrice: 0,
+            maxPrice: 0,
+            minSize: 0,
+            maxSize: 0,
+            breakfast: false,
+            pets: false
         }
     }
 
@@ -25,14 +34,21 @@ class RoomProvider extends PureComponent {
     componentDidMount(){
         let rooms = this.formatData(items)
         let featuredRooms = rooms.filter(room => room.featured === true);
-        // console.log(featuredRooms)
+
+        // LEARN: how to filter through the rooms and return price of the most expensive room
+        let maxPrice = Math.max(...rooms.map(item => item.price));
+        // LEARN: how to filter through the rooms and return size of the largest room
+        let maxSize = Math.max(...rooms.map(item => item.size));
+
         this.setState({
             rooms, 
             sortedRooms: rooms,
             featuredRooms,
-            loading: false
+            loading: false,
+            price: maxPrice,
+            maxPrice,
+            maxSize,
         })
-        // console.log(rooms)
     }
 
     formatData(items){
@@ -53,11 +69,33 @@ class RoomProvider extends PureComponent {
         return room
     }
 
+    handleChange = event => {
+        const target = event.target
+        const value = event.type === 'checkbox' ? target.checked : target.value
+        const name = target.name
+        this.setState({
+            [name]:value
+        }, this.filterRooms)
+    }
+
+    filterRooms = () => {
+        let { rooms, type, capacity, price, minSize, maxSize, breakfast, pets } = this.state
+
+        let sortedRooms = [...rooms]
+        if(type!=='all'){
+            sortedRooms = sortedRooms.filter(room => room.type === type)
+        }
+        this.setState({
+            sortedRooms,
+        })
+    }
+
     render() {
         return (
             <RoomContext.Provider value={{
                 ...this.state,
-                getRoom: this.getRoom
+                getRoom: this.getRoom,
+                handleChange: this.handleChange,
                 }}>
                 {this.props.children}
             </RoomContext.Provider>
