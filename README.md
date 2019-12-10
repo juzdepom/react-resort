@@ -38,7 +38,8 @@ Tip: Command + Shift + V to see README preview.
 
 #### Commits
 
-* [finished setting up SingleRoom component]()
+* [created RoomsFilter, RoomsList, and RoomsContainer component. Showed two methods of implementing context.js]
+* [finished setting up SingleRoom component]
 * [npm installed styled-components and created the StyledHero component for the SingleRoom component](https://github.com/juzdepom/react-resort/commit/cea85b3759898351efab63ab62c32bd9ca44234b)
 * [set up Hero and Banner components in the SingleRoom component](https://github.com/juzdepom/react-resort/commit/3c30bf6b5e0be96195f53233d82726a75de66691)
 * set up context api with SingleRoom component and accessed method with the slug as a parameter
