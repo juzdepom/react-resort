@@ -1,9 +1,11 @@
 import React, { PureComponent } from 'react'
+import {Link} from 'react-router-dom'
+import {RoomContext} from '../context'
 import defaultBcg from '../images/room-1.jpeg'
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
-import {Link} from 'react-router-dom'
-import {RoomContext} from '../context'
+import StyledHero from '../components/StyledHero'
+
 
 class SingleRoom extends PureComponent {
     constructor(props) {
@@ -20,7 +22,7 @@ class SingleRoom extends PureComponent {
     render() {
         const {getRoom} = this.context;
         const room = getRoom(this.state.slug);
-        //if room is undefined
+        // LEARN: if room is undefined; e.g. rooms/blablabla will return this error div
         if(!room){
             return <div className="error">
                 <h3>no such room could be found</h3>
@@ -29,11 +31,13 @@ class SingleRoom extends PureComponent {
         }
         const {name, description, capacity, size, price, extras, breakfast, pets, images } = room
         return (
-            <Hero hero="roomsHero">
+            <>
+            <StyledHero img={images[0] || this.state.defaultBcg}>
                 <Banner title={`${name} room`}>
                     <Link to="/rooms" className="btn-primary">Back To Rooms</Link>
                 </Banner>
-            </Hero>
+            </StyledHero>
+            </>
         )
     }
 }
