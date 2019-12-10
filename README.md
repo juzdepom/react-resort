@@ -34,7 +34,7 @@ VSCode Tip: Command + Shift + V to see README preview.
 * ```npm install styled-components```
     * <strong>Styled Components Documentation: </strong>https://www.styled-components.com/docs
 * ```npm install contentful```
-    * [Contentful](https://www.contentful.com/)
+    * Contentful: https://www.contentful.com/
 
 
 ## Other Resources
