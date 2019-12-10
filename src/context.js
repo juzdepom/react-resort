@@ -1,5 +1,14 @@
 import React, { PureComponent } from 'react'
 import items from './data'
+import Client from './Contentful';
+
+Client.getEntries({
+    //content_type can be found in the your Contentful account in your Content Model
+    //the content model used in this project is called reactResort
+    //if we click into the project, we will be able to see the "CONTENT TYPE ID"
+    //"Use this ID to retrieve everything related to this content type via the API."
+    content_type: "reactResort",
+}).then(response => console.log(response.items));
 
 // LEARN: setting up the context API prevents 'props drilling'
 // DOCUMENTATION: https://reactjs.org/docs/context.html#reactcreatecontext
@@ -29,9 +38,43 @@ class RoomProvider extends PureComponent {
         }
     }
 
-    //getData
+    //getting data from Contentful
+    getData = async () => {
+        try {
+            let response = await Client.getEntries({
+                //content_type can be found in the your Contentful account in your Content Model
+                //the content model used in this project is called reactResort
+                //if we click into the project, we will be able to see the "CONTENT TYPE ID"
+                //"Use this ID to retrieve everything related to this content type via the API."
+                content_type: 'reactResort'
+            })
+            let rooms = this.formatData(response.items)
+            let featuredRooms = rooms.filter(room => room.featured === true);
+
+            // LEARN: how to filter through the rooms and return price of the most expensive room
+            let maxPrice = Math.max(...rooms.map(item => item.price));
+            // LEARN: how to filter through the rooms and return size of the largest room
+            let maxSize = Math.max(...rooms.map(item => item.size));
+
+            this.setState({
+                rooms, 
+                sortedRooms: rooms,
+                featuredRooms,
+                loading: false,
+                price: maxPrice,
+                maxPrice,
+                maxSize,
+            })
+        } catch (error) {
+            console.error(error)
+        }
+    }
 
     componentDidMount(){
+        // POPULATE WITH DATA FROM CONTENTFUL
+        // this.getData();
+
+        // POPULATE WITH HARD CODED DATA FROM data.js
         let rooms = this.formatData(items)
         let featuredRooms = rooms.filter(room => room.featured === true);
 

@@ -19,6 +19,8 @@ Tip: Command + Shift + V to see README preview.
     * <strong>React Icons Documentation:</strong>https://react-icons.netlify.com/#/ 
 * ```npm install styled-components```
     * <strong>Styled Components Documentation: </strong>https://www.styled-components.com/docs
+* ```npm install contentful```
+    * [Contentful](https://www.contentful.com/)
 
 
 ## Other Resources
@@ -38,6 +40,7 @@ Tip: Command + Shift + V to see README preview.
 
 #### Commits
 
+* npm installed contentful
 * set up size, breakfast, and pets filter in RoomsFilter
 * set up price filter in RoomsFilter
 * set up guest number filter in RoomsFilter

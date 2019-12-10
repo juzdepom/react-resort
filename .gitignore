@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# contentful
+/src/Contentful.js
+
 # testing
 /coverage
 
