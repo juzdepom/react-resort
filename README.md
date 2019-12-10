@@ -22,6 +22,8 @@ The redirect file is located in the "set up" folder that Coding Addict provides;
 
 See [Page Not Found on Netlify with React Router](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/) for a more in-depth explanation.
 
+<strong>React Icons Documentation:</strong>https://react-icons.netlify.com/#/
+
 
 
 
