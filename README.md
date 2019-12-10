@@ -38,6 +38,8 @@ Tip: Command + Shift + V to see README preview.
 
 #### Commits
 
+* set up guest number filter in RoomsFilter
+* set up room type filter in the RoomFilter component
 * built out the RoomsList component
 * [created RoomsFilter, RoomsList, and RoomsContainer component. Showed two methods of setting up the context api with context.js]
 * [finished setting up SingleRoom component]
