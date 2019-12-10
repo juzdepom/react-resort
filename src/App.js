@@ -8,9 +8,12 @@ import Error from './pages/Error';
 
 import { Route, Switch } from 'react-router-dom';
 
+import Navbar from './components/Navbar'
+
 function App() {
   return (
     <>
+      <Navbar/>
       {/* LEARN: the Switch component allows us to render the error page */}
       <Switch>
         {/* LEARN: if you don't have the 'exact' attribute, /rooms/ will also render the Home component because it includes '/' */}
