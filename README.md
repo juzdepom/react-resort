@@ -1,3 +1,26 @@
+
+## React Resorts Project
+
+Following the ~6 hour [In-Depth React Tutorial: Build a Hotel Reservation Site (with Contentful and Netlify)
+](https://www.youtube.com/watch?v=LXJOvkVYQqA) on FreeCodeCamp by Coding Addict.
+
+Set Up Files: [https://github.com/john-smilga/setup-files-react-beach-resort](https://github.com/john-smilga/setup-files-react-beach-resort)
+
+Tip: Command + Shift + V to see README preview.
+
+<hr/>
+
+## Work Log
+
+### Session 1 - Tu, Dec 10, 2019
+
+7:15 AM - ?
+
+
+<hr/>
+
+## Boilerplate React ReadME
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
