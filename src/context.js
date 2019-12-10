@@ -46,9 +46,19 @@ class RoomProvider extends PureComponent {
         return tempItems;
     }
 
+    getRoom = (slug) => {
+        let tempRooms = [...this.state.rooms]
+        // LEARN: find returns the first object it finds, filter returns an array
+        const room = tempRooms.find((room) => room.slug === slug);
+        return room
+    }
+
     render() {
         return (
-            <RoomContext.Provider value={{...this.state}}>
+            <RoomContext.Provider value={{
+                ...this.state,
+                getRoom: this.getRoom
+                }}>
                 {this.props.children}
             </RoomContext.Provider>
         )
